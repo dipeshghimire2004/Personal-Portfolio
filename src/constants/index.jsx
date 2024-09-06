@@ -11,15 +11,11 @@ import projectImage1 from "../assets/project1.jpeg";
 import projectImage2 from "../assets/project2.jpeg";
 import projectImage3 from "../assets/project3.jpeg";
 import projectImage4 from "../assets/project4.jpeg";
-import projectImage5 from "../assets/project5.jpeg";
-import projectImage6 from "../assets/project6.jpeg";
 
 import { RiReactjsLine } from "react-icons/ri";
-import { TbBrandNextjs } from "react-icons/tb";
-import { SiMongodb } from "react-icons/si";
-import { DiRedis } from "react-icons/di";
-import { FaNodeJs } from "react-icons/fa";
-import { BiLogoPostgresql } from "react-icons/bi";
+import { SiPhp } from "react-icons/si";
+import { BiLogoFigma } from "react-icons/bi";
+import { TbBrandJavascript } from "react-icons/tb";
 import { FaPython } from "react-icons/fa6";
 import { RiJavaFill } from "react-icons/ri";
 
@@ -89,24 +85,24 @@ export const SKILLS = [
     experience: "1+ years",
   },
   {
-    icon: <SiMongodb className="text-4xl text-green-600 lg:text-5xl" />,
+    icon: <SiPhp className="text-4xl text-green-600 lg:text-5xl" />,
     name: "PHP",
-    experience: "six+ months",
+    experience: "3+ months",
   },
   {
-    icon: <DiRedis className="text-4xl text-red-600 lg:text-5xl" />,
+    icon: <BiLogoFigma className="text-4xl text-red-600 lg:text-5xl" />,
     name: "Figma",
-    experience: "2+ year",
+    experience: "1+ year",
   },
   {
-    icon: <FaNodeJs className="text-4xl text-green-600 lg:text-5xl" />,
-    name: "Python",
+    icon: <TbBrandJavascript className="text-4xl text-green-600 lg:text-5xl" />,
+    name: "Javascript",
     experience: "1+ years",
   },
   {
     icon: <FaPython className="text-4xl text-green-600 lg:text-5xl" />,
     name: "Python",
-    experience: "1+ years",
+    experience: "6+ months",
   },
   {
     icon: <RiJavaFill className="text-4xl text-sky-700 lg:text-5xl" />,

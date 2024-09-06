@@ -9,7 +9,7 @@ import Experiences from './components/Experiences';
 import EducationSection from './components/EducationSection';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
-import Github from './components/Github'
+import Github from './components/GIthub';
 
 // const router=createBrowserRouter(
 //   createRoutesFromElements(
