@@ -4,30 +4,6 @@ import { NAVIGATION_LINKS } from "../constants"; // Import navigation links cons
 import { FaBars, FaTimes } from "react-icons/fa"; // Import icons for the mobile menu toggle button
 
 const Navbar = () => {
-    // State to manage the visibility of the mobile menu
-    // const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-
-    // // Function to toggle the mobile menu's visibility
-    // const toggleMobileMenu = () => {
-    //     setIsMobileMenuOpen(!isMobileMenuOpen);
-    // };
-
-    // // Function to handle link clicks, scroll smoothly to the target section
-    // const handleLinkClick = (e, href) => {
-    //     e.preventDefault(); // Prevent the default anchor click behavior
-    //     const targetElement = document.querySelector(href); // Find the target section based on href
-    //     if (targetElement) {
-    //         const offset = -85; // Offset to adjust the scroll position (for fixed headers)
-    //         const elementPosition = targetElement.getBoundingClientRect().top; // Get the position of the target element
-    //         const offsetPosition = elementPosition + window.scrollY + offset; // Calculate the scroll position including the offset
-
-    //         window.scrollTo({
-    //             top: offsetPosition, // Scroll to the calculated position
-    //             behavior: "smooth", // Smooth scrolling animation
-    //         });
-    //     }
-    //     setIsMobileMenuOpen(false); // Close the mobile menu after clicking a link
-    // };
 
 
     const [isMobileMenuOpen, setIsMobileMenuOpen]=useState(false);
@@ -96,9 +72,9 @@ const Navbar = () => {
                     <div className="flex items-center">
                         <button className="focus:outline-none lg:hidden" onClick={toggleMobileMenu}>
                             {isMobileMenuOpen ? (
-                                <FaTimes className="m-2 h-6 w-5" /> // Close icon when the menu is open
+                                <FaTimes className="m-2 h-6 w-5" />
                             ) : (
-                                <FaBars className="m-2 h-6 w-5" /> // Menu icon when the menu is closed
+                                <FaBars className="m-2 h-6 w-5" /> 
                             )}
                         </button>
                     </div>
@@ -109,7 +85,7 @@ const Navbar = () => {
                                 <li key={index}>
                                     <a
                                         href={item.href}
-                                        className="block w-full text-lg" // Corrected typo from "vlock" to "block"
+                                        className="block w-full text-lg" 
                                         onClick={(e) => handleLinkClick(e, item.href)}
                                     >
                                         {item.label}

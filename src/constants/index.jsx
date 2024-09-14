@@ -11,6 +11,7 @@ import projectImage1 from "../assets/project1.jpeg";
 import projectImage2 from "../assets/project2.jpeg";
 import projectImage3 from "../assets/project3.jpeg";
 import projectImage4 from "../assets/project4.jpeg";
+import projectImage5 from '../assets/project5.jpeg';
 
 import { RiReactjsLine } from "react-icons/ri";
 import { SiPhp } from "react-icons/si";
@@ -47,11 +48,11 @@ export const PROJECTS = [
   },
   {
     id: 2,
-    name: "E-Commerce Platform",
+    name: "Doctor Appointent System",
     description:
-      "An e-commerce web application developed using Next.js and Stripe for payment integration, featuring a comprehensive product catalog, shopping cart, and checkout system.",
+      "Doctor Appointent Boooking System web application developed using react.js, allows patients to easily schedule, reschedule, or cancel appointments with doctors",
     image: projectImage2,
-    githubLink: "",
+    githubLink: "https://github.com/dipeshghimire2004/Doctor-Appointment-System",
   },
   {
     id: 3,
@@ -68,6 +69,14 @@ export const PROJECTS = [
       "A weather application that uses the OpenWeatherMap API to fetch and display current weather data and forecasts for various locations, built with Javascript and CSS.",
     image: projectImage4,
     githubLink: "https://github.com/user/weather-app",
+  },
+  {
+    id: 5,
+    name: "My-Blog-App",
+    description:
+      "A blog app using React and Appwrite leverages React for the front end and Appwrite for backend services, and Tailwind CSS for resposive design, allows you to post your blog with Rich-Text-Editor. ",
+    image: projectImage5,
+    githubLink: "https://github.com/dipeshghimire2004/My-Blog-App",
   },
 ];
 
