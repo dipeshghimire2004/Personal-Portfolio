@@ -23,30 +23,30 @@ function Project() {
                     <img src={projects.image}
                         alt={projects.name}
                         className='h-full w-full object-cover 
-                        transitio-transform duration-500 group-hover:scale-110'/>
-                    <div
-                    className='absolute inset-0 flex flex-col items-center justify-center text-white opacity-0 backdrop-blur-lg 
-                    transition-opacity duration-500 group-hover:opacity-100'> 
-                        <h3 className='mb-2 text-xl'>{projects.name}</h3>
+                        transition-transform duration-500 group-hover:scale-110'/>
+                    <div className='absolute inset-0 flex flex-col items-center justify-center text-white backdrop-blur-lg 
+                     duration-500 '> 
+                        <h3 className='mb-2 text-3xl'>{projects.name}</h3>
                         <p className='mb-12 p-4'>{projects.description}</p> 
-                        <a
+                        <motion.a
+                         initial={{opacity:0, scale:0.9}}
+                         whileInView={{opacity:0, scale:1}}
+                         transition={{duration:1}}
+                         whileHover={{opacity:1,scale:1.1}}
+ 
                        
                         href={projects.githubLink} target="_blank"
                             rel="noopener noreferrer" className='rounded-full
                             bg-white px-4 py-2 text-black hover:bg-gray-300'>
 
-                            <motion.div
+                            <div
+                           
                             
-                            initial={{opacity:0, scale:0.9}}
-                            whileInView={{opacity:1, scale:1}}
-                            transition={{duration:1}}
-                            whileHover={{scale:1.005}}
-    
                             className='flex items-center'>
                                 <span>View on GitHub</span>
                                 <MdArrowOutward />
-                            </motion.div> 
-                        </a>
+                            </div> 
+                        </motion.a>
                     </div>
                 </div>
             ))}
